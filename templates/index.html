@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tuulai lesson</title>
+</head>
+<body>
+  <h1>Home page template ashiglav</h1>
+  <h5>tuulai huurhun</h5>
+  {% for b in a %}
+    id бол {{b.id}} <br>
+    гарчиг нь {{b.title}}
+    <br>
+    текст нь : {{b.text}}
+    <br>
+    {% endfor %}
+
+    <h1>Comment</h1>
+    <ul>
+      {% for d in c %}
+      <li>{{d.user}} - {{d.comment}}</li>
+    </ul>
+  {% endfor %}
+</body>
+</html>
